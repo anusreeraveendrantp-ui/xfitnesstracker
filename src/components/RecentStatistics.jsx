@@ -13,10 +13,10 @@ const RecentStatistics = ({ records, onEdit, onDelete }) => {
                 <div className="record-date">{record.date}</div>
                 <div className="record-stats">
                   <span>
-                    🍽️ Intake: <span className="stat-intake">{record.caloriesIntake} kcal</span>
+                    🍽️ <span className="stat-intake">Calories Intake = {record.caloriesIntake}</span>
                   </span>
                   <span>
-                    🔥 Burned: <span className="stat-burned">{record.caloriesBurned} kcal</span>
+                    🔥 <span className="stat-burned">Calories Burned = {record.caloriesBurned}</span>
                   </span>
                 </div>
                 {record.description && (

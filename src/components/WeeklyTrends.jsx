@@ -27,7 +27,7 @@ const WeeklyTrends = ({ records }) => {
 
   const weeklyData = getLast7DaysData();
 
-  if (records.length === 0) return null;
+  if (weeklyData.length === 0) return null;
 
   const chartData = weeklyData.map((r) => ({
     date: r.date,
